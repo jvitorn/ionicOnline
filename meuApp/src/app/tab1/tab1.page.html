@@ -12,28 +12,28 @@
         <ion-col size="12">  
         <ion-item>
             <ion-label color="primary" position="stacked">Valor 1:</ion-label>
-            <ion-input> </ion-input>
+            <ion-input [(ngModel)]="valor1"> </ion-input>
         </ion-item>
         </ion-col>
     </ion-row>
     <ion-row>
         <ion-col size="12">  
         <ion-item>
-            <ion-label color="primary" position="stacked">Valor 2:</ion-label>
-            <ion-input> </ion-input>
+            <ion-label color="primary" position="stacked" >Valor 2:</ion-label>
+            <ion-input [(ngModel)]="valor2"> </ion-input>
         </ion-item>
         </ion-col>
     </ion-row>
     <ion-row>
         <ion-col size="12">  
-       <ion-button color="primary" expand="block"> Calcular </ion-button>
+       <ion-button color="primary" expand="block" (click)="calcula()"> Calcular </ion-button>
         </ion-col>
     </ion-row>
     <ion-row>
         <ion-col size="12">  
         <ion-item>
             <ion-label color="danger" >Resultado:</ion-label>
-            <ion-input disabled="true"> </ion-input>
+            <ion-input disabled="true" [value]="exibirResultado()"> </ion-input>
         </ion-item>
         </ion-col>
     </ion-row>

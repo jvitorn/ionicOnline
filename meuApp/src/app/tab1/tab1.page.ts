@@ -7,6 +7,18 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
+    private valor1:string;
+    private valor2:string;
+    private resultado:number;
+
+    calcula(){
+        this.resultado = parseFloat(this.valor1) + parseFloat(this.valor2)
+    }
+
+    exibirResultado():number{
+        return this.resultado;
+    }
+
   constructor() {}
 
 }
